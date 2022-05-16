@@ -8,4 +8,4 @@
 
 ---
 
-💰 `ITBANK` [nuestro Proyecto] `https://grupo-2-itba.github.io/itbank/`
+💰 `ITBANK` `[nuestro Proyecto]` https://grupo-2-itba.github.io/itbank/
