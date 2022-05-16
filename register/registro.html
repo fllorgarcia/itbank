@@ -13,7 +13,7 @@
 </head>
 <body>
 <div class="box-registro">
-
+<!-- header de la pagina principal-->
     <header>
         <a href="Index.html">
         <div class="logo">
@@ -21,9 +21,11 @@
         </div>
         </a>
     </header>
-    <div>
+    <!-- fin de la pagina principal-->
+    <div><!-- este div no tiene relevancia, es para separar algunas cosas-->
     <h2>Por favor,escribí tus datos</h2>
     <h3>Ingresa los datos solicitados</h3>
+        <!-- esto son los inputs con animaciones-->
         <ol>
         <li>
         <form class="form">
@@ -42,6 +44,7 @@
             </label>
         </form>
         </li>
+        <!--Fin del input con animaciones de texto-->
         <div class="genero">
         <p>Genero</p>
         <form name="formulario" method="post" action="/send.php">
@@ -52,6 +55,7 @@
             </p>
         </form>
         </div>
+    <!-- input telefono-->
         <div class="telefono">
             <form id="login" onsubmit="process(event)">
                 <input id="phone" type="tel" name="phone" class="int"/>
@@ -62,9 +66,11 @@
         <div class="check">
             <li><input type="checkbox" name="termino"> Acepto los Términos y Condiciones.</li>
         </div>
+    <!-- boton de regristro-->
         <div class="button">
             <input type="button" value="Registrarme">
         </div>
+    <!-- Este ees el boton para volver atras-->
         <div class="button2">
             <input type="button" value="Volver" onclick="history.back()">
         </div>
