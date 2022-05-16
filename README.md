@@ -8,4 +8,4 @@
 
 ---
 
-💰 `ITBANK` [Nuestra carpeta](https://grupo-2-itba.github.io/itbank/)
+💰 `ITBANK` [Nuestra carpeta](https://github.com/GRUPO-2-ITBA/itbank)
