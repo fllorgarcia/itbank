@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="css/boxCheck.css">
+    <link rel="stylesheet" href="css/ex.css">
+    <title>Registro</title>
+</head>
+<body>
+<div class="box-registro">
+
+    <header>
+        <div class="logo">
+            <img   src="./img/ITBANK-LOGO-MAS-CHICO.png">
+        </div>
+    </header>
+    <div>
+    <h2>Por favor,escribí tus datos</h2>
+    <h3>Ingresa los datos solicitados</h3>
+        <ol>
+        <li>
+        <form class="form">
+            <input type="text" required>
+            <label class="lbl-nombre">
+                <span class="text-nomb">DNI</span>
+            </label>
+        </form>
+        </li>
+
+        <li>
+        <form class="form">
+            <input type="text" required>
+            <label class="lbl-nombre">
+                <span class="text-nomb">MAIL</span>
+            </label>
+        </form>
+        </li>
+        <div class="genero">
+        <p>Genero</p>
+        <form name="formulario" method="post" action="/send.php">
+            <!-- Botones de opción -->
+            <p>
+                <input type="radio" name="sexo" value="H"> Hombre</input>
+                <input type="radio" name="sexo" value="M"> Mujer</input>
+            </p>
+        </form>
+        </div>
+        <div class="telefono">
+            <form id="login" onsubmit="process(event)">
+                <input id="phone" type="tel" name="phone" class="int"/>
+            </form>
+            <div class="alert alert-info" style="display: none;"> </div>
+        </div>
+        <!--Terminos y condiciones-->
+        <div class="check">
+            <li><input type="checkbox" name="termino"> Acepto los Términos y Condiciones.</li>
+        </div>
+        <div class="button">
+            <input type="button" value="Registrarme">
+        </div>
+        <div class="button2">
+            <input type="button" value="Volver" onclick="history.back()">
+        </div>
+    </ol>
+</div>
+    <!--Script's para el detector de telefono-->
+    <script>
+        const info = document.querySelector(".alert-info");
+
+        function process(event) {
+            event.preventDefault();
+
+            const phoneNumber = phoneInput.getNumber();
+
+            info.style.display = "";
+            info.innerHTML = `Phone number in E.164 format: <strong>${phoneNumber}</strong>`;
+        }
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            utilsScript:
+                "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+        function getIp(callback) {
+            fetch('https://ipinfo.io/json?token=<your token>', { headers: { 'Accept': 'application/json' } })
+                .then((resp) => resp.json())
+                .catch(() => {
+                    return {
+                        country: 'us',
+                    };
+                })
+                .then((resp) => callback(resp.country));
+        }
+    </script>
+</body>
+</html>
