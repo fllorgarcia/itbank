@@ -1,26 +1,86 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    font-family: "Open Sans",sans-serif;
-  }
-header{
-    background-color: #26154B;
-    height: 90px;
-}
-.inner-width{
-    max-width: 1000px;
-    padding: 0 10px;
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
-  }
-  
-  .logo{
-    float: center;
-    padding: 10px 0;
-  
-  }
-  
-  .logo img{
-    height: 70px;
-  }
-  
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+header {
+  background-color: #154056;
+  height: 90px;
+}
+.inner-width {
+  max-width: 1000px;
+  padding: 0 10px;
+}
+.inner-width ul {
+  list-style: none;
+}
+.inner-width li {
+  display: inline-flex;
+}
+.button1 .button2 {
+  float: right;
+  display: flex;
+  margin-left: 1000px;
+}
+
+.button:hover {
+  max-height: 2rem;
+  overflow: hidden;
+  padding: 0rem;
+  background: rgb(143, 143, 143);
+  border-radius: 3px;
+  box-shadow: 0 0 0.3rem #919191;
+  transition: all 0.25s;
+}
+
+.welcome {
+  font-size: large;
+  position: relative;
+  font-style: normal;
+  text-align: center;
+  margin-top: 10px;
+}
+.home {
+  margin: 2rem;
+  display: grid;
+  gap: 5rem;
+  grid-auto-rows: 10rem;
+  grid-template-columns: repeat(3, minmax(10rem, 25rem));
+  grid-auto-flow: dense;
+  margin-bottom: 55px;
+}
+.home .card {
+  max-height: 8rem;
+  overflow: hidden;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0.2rem 0.3rem #919191;
+  transition: all 0.25s;
+  display: flex;
+  justify-content: center;
+}
+
+.home .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 5px 5px 10px 4px #6f6e6e;
+}
+
+.card-header {
+  display: flex;
+  font-style: normal;
+  font-weight: bold;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 1rem;
+}
+
+.card .card-header .title {
+  font-stretch: normal;
+  letter-spacing: 0.33px;
+  color: #1c536e;
+  font-size: 1.5rem;
+}
