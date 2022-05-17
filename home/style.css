@@ -1,3 +1,12 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    font-family: 'Inter', sans-serif;
+}
 .home {
     margin: 2rem;
     display: grid;
@@ -106,22 +115,27 @@ footer {
     .logo {
         justify-content: center;
     }
+
     .card-header .subtitle {
         visibility: hidden;
         width: 0;
     }
+
     #category {
         visibility: hidden;
         width: 0;
         margin: 0;
     }
+
     .card .card-header .title {
         padding: 5px;
         font-size: 1rem;
     }
+
     .login__container-logo .logo {
         height: 5rem;
     }
+
     .home {
         margin: 1rem;
         gap: 1rem;
