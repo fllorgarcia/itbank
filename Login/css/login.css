@@ -192,7 +192,7 @@ label {
 
     .main .bg-img {
         display: block;
-        background-image: url('/Login/img/itba-industry-image.a6e025a71fc2b521ebcecec63cb6e6629b17b92a.jpg');
+        background-image: url('../img/itba-industry-image.a6e025a71fc2b521ebcecec63cb6e6629b17b92a.jpg');
         background-size: cover;
         background-position: center;
         object-fit: cover;
