@@ -4,7 +4,7 @@
     padding: 0;
     text-decoration: none;
 }
-body {
+ body {
     font-family: 'Inter', sans-serif;
 }
 .home {
@@ -41,7 +41,7 @@ header {
     max-height: 8rem;
     overflow: hidden;
     padding: 1rem;
-    background: #fff;
+    background: rgba(255, 34, 34, 0.05);;
     border-radius: 5px;
     box-shadow: 0 0.2rem 0.3rem #919191;
     transition: all 0.25s;
