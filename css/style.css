@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -12,19 +14,34 @@ header {
   max-width: 1000px;
   padding: 0 10px;
 }
-.logo {
-  float: center;
-  padding: 10px 0;
+.inner-width ul {
+  list-style: none;
+}
+.inner-width li {
+  display: inline-flex;
+}
+.button1 .button2 {
+  float: right;
+  display: flex;
+  margin-left: 1000px;
 }
 
-.logo img {
-  height: 70px;
+.button:hover {
+  max-height: 2rem;
+  overflow: hidden;
+  padding: 0rem;
+  background: rgb(143, 143, 143);
+  border-radius: 3px;
+  box-shadow: 0 0 0.3rem #919191;
+  transition: all 0.25s;
 }
+
 .welcome {
   font-size: large;
   position: relative;
   font-style: normal;
   text-align: center;
+  margin-top: 10px;
 }
 .home {
   margin: 2rem;
