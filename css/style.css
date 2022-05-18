@@ -1,82 +1,67 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
+
 }
-.navegador{
-  font-size: 1.3rem;
-  margin-top: 10%;
-  }
-  
-  .navegador ul{
-      list-style: none;
-      text-decoration: none;
-  }
-  
-  .navegador ul li{
-      display: inline-block;
-  }
-  
-  .navegador ul li a{
-      text-decoration: none;
-      list-style: none;
-      color:#1c536e; 
-      margin-left: 2.5rem;
-      text-align: center;
-      padding: 1rem;
-  
-  }
-  
-  .contenedor{
-  
-    margin-right: 800px;
-  }
-  
-  .header{
-      background-color:#1c536e;
-      color: white;
-      padding: -2rem 0rem;
-  }
-  
-  .logo-contenedor{
-      display:flex;
-      justify-content: space-around;
-      align-items: center;
-  }
-  .logo-contenedor a{
-      text-decoration: none;
-      color:white;
-  }
-  .menu{
-      margin-right: 15%;
-      margin-top: 0%;
-      display: none;
-  }
-  .online{
-      margin-left: 15%;
-      margin-top: 0%;
-  }
-  .online a{
-      color:#1c536e;
-      background-color: white;
-      padding: 10px 10px;
-      border-radius: 15px 15px;
-      transition: all 0.4s linear;
-  
-  }
+
+.contenedor {
+
+  margin-right: 800px;
+}
+
+.header {
+  background-color: #1c536e;
+  color: white;
+  padding: -2rem 0rem;
+}
+
+.logo-contenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-contenedor a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu {
+  margin-right: 15%;
+  margin-top: 0%;
+  display: none;
+}
+
+.online input {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px 10px;
+  font-size: 15px;
+  color: #1c536e;
+  outline: none;
+  font-weight: bold;
+  margin-left: 20px;
+  transition: linear 0.3s;
+}
+
+.online input:hover {
+  color: white;
+  background-color: #1c536e;
+  border-color: white;
+}
+.carousel-inner{
+margin-right: 500px;
+}
 
 
 
-.button:hover {
-  max-height: 2rem;
-  overflow: hidden;
-  padding: 0rem;
-  background: rgb(143, 143, 143);
-  border-radius: 3px;
-  box-shadow: 0 0 0.3rem #919191;
-  transition: all 0.25s;
+
+a {
+  text-decoration: none;
 }
 
 .welcome {
@@ -86,6 +71,7 @@
   text-align: center;
   margin-top: 200px;
 }
+
 .home {
   margin: 2rem;
   display: grid;
@@ -95,6 +81,7 @@
   grid-auto-flow: dense;
   margin-bottom: 55px;
 }
+
 .home .card {
   max-height: 8rem;
   overflow: hidden;
@@ -126,4 +113,8 @@
   letter-spacing: 0.33px;
   color: #1c536e;
   font-size: 1.5rem;
+}
+
+ol {
+  list-style: none;
 }
