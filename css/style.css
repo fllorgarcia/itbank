@@ -5,11 +5,9 @@
   padding: 0;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
-
 }
 
 .contenedor {
-
   margin-right: 800px;
 }
 
@@ -37,29 +35,27 @@
 }
 
 .online input {
-    padding: 1.3em 3em;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    font-weight: 500;
-    color: #000;
-    background-color: #fff;
-    border: none;
-    border-radius: 45px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    outline: none;
-    float: right;
-    display: relative;
-    margin-left: 10px;
-  }
-  
-  
-  .online input:active {
-    transform: translateY(-1px);
-  }
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  float: right;
+  display: relative;
+  margin-left: 10px;
+}
 
+.online input:active {
+  transform: translateY(-1px);
+}
 
 .online input:hover {
   background-color: #1caa5c;
@@ -68,34 +64,32 @@
   transform: translateY(-7px);
 }
 
-
 a {
   text-decoration: none;
 }
 
 .welcome {
   font-size: large;
-  position: relative;
+  display: inline-block;
   font-style: normal;
   text-align: center;
-  margin-top: 200px;
 }
 
 .home {
-  margin: 5rem;
+  margin: 3rem;
   display: grid;
   gap: 10rem;
   grid-auto-rows: 10rem;
-  grid-template-columns: repeat(3, minmax(10rem, 25rem));
+  grid-template-columns: repeat(3, minmax(10rem, 20rem));
   grid-auto-flow: dense;
-  margin-bottom: 55px;
+  margin-bottom: 40px;
 }
 .home .card {
-  max-height: 8rem;
+  max-height: 10rem;
   max-width: 15rem;
   overflow: hidden;
   padding: 1rem;
-  background: #fff;
+  background: rgb(255, 255, 255);
   border-radius: 5px;
   box-shadow: 0 0.3rem 0.3rem 0.2rem #919191;
   transition: all 0.25s;
@@ -119,24 +113,19 @@ a {
 }
 
 .card-header {
-  display: flex;
   font-style: normal;
   font-weight: bold;
   flex-direction: column;
   position: absolute;
-  margin-top: 1rem;
+  margin-top: 0rem;
 }
-
-.card .card-header .title {
-  font-stretch: normal;
-  letter-spacing: 0.33px;
-  color: #1c536e;
-  border-block-end: 5px;
+.icon {
 }
 .tittle {
+  justify-content: center;
   text-align: center;
   margin-top: 3px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-style: normal;
   color: #1caa5c;
   cursor: pointer;
