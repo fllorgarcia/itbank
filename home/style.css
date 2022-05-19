@@ -88,7 +88,7 @@ header {
     overflow: hidden;
     padding: 1rem;
     background: rgba(255, 34, 34, 0.05);;
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 0 0.2rem 0.3rem #919191;
     transition: all 0.25s;
     display: flex;
@@ -156,6 +156,34 @@ footer {
     color: black;
     padding-bottom: 1rem;
 }
+
+footer {
+    position: flex;
+    bottom: 0;
+    height: 5%;
+    background-color: #123444;
+    padding: 3rem;
+    color: #fff;
+    text-align: center;
+    font-size: small;
+}
+li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+#link {
+    color: #fff;
+    text-decoration: underline;
+    font-size: medium;
+    font-weight: 500;
+}
+
+#link:active {
+    color: #000;
+}
+
 
 @media screen and (min-width: 200px) and (max-width: 500px) {
     .logo {
