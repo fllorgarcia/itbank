@@ -7,20 +7,21 @@
     font-family: "Open Sans", sans-serif;
 }
 
-.contenedor {
-    margin-right: 800px;
-}
+
 
 .header {
     background-color: #1c536e;
     color: white;
     padding: -2rem 0rem;
+    height: min-content;
+    width: 100%;
 }
 
 .logo-contenedor {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 1rem;
 }
 
 .logo-contenedor a {
@@ -63,7 +64,10 @@
     color: #fff;
     transform: translateY(-7px);
 }
-
+.carousel-mobile{
+    display: flex;
+    justify-content: center;
+}
 #carouselExampleFade {
     position: relative;
     width: 70%;
@@ -77,13 +81,9 @@
     border-radius: 20px;
 }
 
-.socio img {
-    width: 68%;
-    height: 400px;
-    border-radius: 20px;
-    margin-left: 300px;
+.main{
+    padding: 0 3rem;
 }
-
 .welcome {
     font-size: 35px;
     text-align: center;
@@ -95,19 +95,17 @@
 }
 
 .home1 {
-    margin-left: 17%;
-    margin-top: 5%;
+    margin: 5% 0;
     display: grid;
-    gap: 10rem;
+    justify-content: center ;
+    gap: 6rem;
     grid-auto-rows: 10rem;
     grid-template-columns: repeat(3, minmax(10rem, 20rem));
     grid-auto-flow: dense;
-    margin-bottom: 70px;
 }
 
 .home1 .card1 {
-    max-height: 10rem;
-    max-width: 15rem;
+    max-width: 100%;
     overflow: hidden;
     padding: 1rem;
     background: rgb(255, 255, 255);
@@ -116,7 +114,7 @@
     transition: all 0.25s;
     display: flex;
     justify-content: center;
-    margin-right: 40px;
+    cursor: pointer;
 }
 
 .card1 a {
@@ -145,15 +143,18 @@
 .card-header1 {
     font-style: normal;
     font-weight: bold;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     margin-top: 0rem;
 }
 
-.tittle {
+.text-card {
     justify-content: center;
     text-align: center;
-    margin-bottom: 50px;
+    
     font-size: 1rem;
     font-style: normal;
     color: #1c536e;
