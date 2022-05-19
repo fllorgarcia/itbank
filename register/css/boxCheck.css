@@ -102,17 +102,91 @@ header {
     margin-top: 40px;
 }
 
-@media only screen and (min-width:320px) and (max-width:600px) {
+@media only screen and (min-width:320px) and (max-width:540px) {
     *{
         margin: 0%;
         padding: 0%;
     }
     .box-registro{
-        text-align: left !important;
+        text-align: center !important;
     }
     header {
-        background-color: green;
-        max-width: 600px;
+        background-color:#154056;
+        max-width: 540px;
+        height: 100px;
+    
+    }
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .form input {
+        width: 450px;
+        font-size: 23px;
+    }
+    .genero input{
+        margin-left: 20px;
+    }
+    .genero p{
+        font-size: 25px;
+        margin: 20px 20px;
+    }
+    .telefono input{
+        width: 450px;
+        font-size: 23px;
+    }
+    .check{
+        font-size: 23px;
+    }
+.button input {
+    background-color: #1DBEB4;
+    width: 300px;
+    max-width: 400px;
+    max-height: 90px;
+    font-size: 40px;
+    color: white;
+    margin-left: 0%;
+}
+
+.button2 input {
+    background-color: #1DBEB4;
+    width: 300px;
+    max-width: 400px;
+    max-height: 90px;
+    font-size: 40px;
+    color: white;
+}
+
+body {
+    background: none;
+    max-width: 400px;
+}
+
+ol li {
+    list-style: none;
+}
+
+h2 {
+    margin-top: 50px;
+}
+
+h3 {
+    margin-top: 40px;
+} 
+}
+@media only screen and (min-width:541px) and (max-width:780px) {
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    .box-registro{
+        text-align: center !important;
+    }
+    header {
+        background-color:#154056;
+        max-width: 700px;
         height: 100px;
     
     }

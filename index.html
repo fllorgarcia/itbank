@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
-
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <title>ITBANK</title>
 </head>
@@ -25,71 +24,97 @@
         </div>
 
         <div class="online">
-            <a href=""><b>Online Banking</b></a>
+            <a href="register/registro.html"><input type="button" value="Registrarme"></input></a>
+            <a href="Login/login.html"><input type="button" value="Online Banking"></input></a>
+            
         </div>
     </header>
 
 
-
     <main>
-        <p class="welcome"><b>!Hola!</b>¿en que podemos ayudarte?</p>
-        <div class="home">
-            <div class="card">
-                <div class="card-header">
-                    <img class="icon" src="" alt="" />
-                    <a class="tittle" href="">Evita estafas</a>
+        <div class="welcome">
+        <p><b>!Hola!</b>¿en que podemos ayudarte?</p>
+        </div>
+        <div class="home1">
+            <div class="card1">
+                <div class="card-heade1r">
+                    <img class="icon" src="img\747305.png" alt="" />
+                    <a class="tittle" href="">Seguros</a>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-header">
-                    <img class="icon" src="" alt="" />
-                    <a class="tittle" href="">Evita estafas</a>
+            <div class="card1">
+                <div class="card-header1">
+                    <img class="icon" src="img\prestamos.png" alt="" />
+                    <a class="tittle" href="">Prestamos</a>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-header">
-                    <img class="icon" src="" alt="" />
-                    <a class="tittle" href="">Evita estafas</a>
+            <div class="card1">
+                <div class="card-header1">
+                    <img class="icon" src="img\beneficios.png" alt="" />
+                    <a class="tittle" href="">Beneficios</a>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-header">
-                    <img class="icon" src="" alt="" />
-                    <a class="tittle" href="">Evita estafas</a>
+            <div class="card1">
+                <div class="card-header1">
+                    <img class="icon" src="img\tarjetas.png" alt="" />
+                    <a class="tittle" href="">Tarjetas</a>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-header">
-                    <img class="icon" src="" alt="" />
-                    <a class="tittle" href="">Evita estafas</a>
+            <div class="card1">
+                <div class="card-header1">
+                    <img class="icon" src="img\pngwing.com.png" alt="" />
+                    <a class="tittle" href="Login/login.html">Inversiones</a>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-header">
-                    <img class="icon" src="" alt="" />
-                    <a class="tittle" href="">Evita estafas</a>
+            <div class="card1">
+                <div class="card-header1">
+                    <img class="icon" src="img\evita estafas.png" alt="" />
+                    <a class="tittle" href="register\img\ROBO-LOGO.png">Evita estafas</a>
                 </div>
             </div>
         </div>
     </main>
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/1.png" class="d-block w-100" alt="..." width="700px" height="600">
+          </div>
+          <div class="carousel-item">
+            <img src="img/3.jpg" class="d-block w-100" alt="..."width="700px" height="600">
+          </div>
+          <div class="carousel-item">
+            <img src="img/ITB002.jpg" class="d-block w-100" alt="..."width="700px" height="600">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
     <footer>
         <nav>
             <ol>
                 <li>
-                    <a href="">Seguridad</a>
+                    <a id="link" href="">Seguridad</a>
                 </li>
                 <li>
-                    z
-                    <a href="">Defensa al consumidor</a>
+
+                    <a id="link" href="">Defensa al consumidor</a>
                 </li>
                 <li>
-                    <a href="">Proteccion de datos personales</a>
+                    <a id="link" href="">Proteccion de datos personales</a>
                 </li>
                 <li>
-                    <a href="">Comisiones</a>
+                    <a id="link" href="">Comisiones</a>
                 </li>
                 <li>
-                    <a href="">Aviso legal</a>
+                    <a id="link" href="">Aviso legal</a>
                 </li>
             </ol>
         </nav>
@@ -99,6 +124,8 @@
             medio.
         </p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
 
 </html>
