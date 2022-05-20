@@ -287,4 +287,22 @@ li {
     .main .login__container-logo .logo {
         height: 8rem;
     }
+    .main{
+        margin-bottom: 100%;
+    }
+}
+@media(min-width:150px){
+    .btn-help{
+        display: none;
+    }
+    .register-link{
+        display: none;
+    }
+    .help-login{
+        display: none;
+    }
+    footer{
+        width: 100%;
+        padding: none;
+    }
 }
