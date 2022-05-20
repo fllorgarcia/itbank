@@ -18,6 +18,7 @@ html {
 body {
     height: min-content;
     font-family: 'Inter', sans-serif;
+    background-color: #fffdf6;
 }
 
 .main {
@@ -35,7 +36,7 @@ body {
 }
 
 .main .login__container-logo {
-    background-color: #154056;
+    background-color: #fffdf6;
     display: flex;
     justify-content: center;
     padding: 1rem 0;
@@ -116,7 +117,7 @@ body {
     bottom: -1px;
     width: 100%;
     height: 100%;
-    border-bottom: 3px solid #154056;
+    border-bottom: 3px solid #26e0a7;
     transform: translateX(-100%);
     transition: all 0.3s ease;
 }
@@ -133,7 +134,7 @@ body {
 .form input:valid+.lbl-nombre .text-nomb {
     transform: translateY(-150%);
     font-size: 14px;
-    color: #154056;
+    color: #26e0a7;
 }
 
 .form input:focus+.lbl-nombre:after,
@@ -167,18 +168,21 @@ label {
 
 .btn-login {
     width: 100%;
-    background-color: #EDEDED;
-    border: none;
+    background-color: #fffdf6;
+
     height: 4rem;
     cursor: pointer;
     font-family: 'Inter', sans-serif;
     font-size: 1.4rem;
     transition: 0.3s ease;
+    border-color: #000;
+    border-radius: 10px 10px;
 }
 
 .btn-login:hover {
     background-color: #26e0a7;
     color: #EDEDED;
+    border-color: #26e0a7;
 }
 
 .help-login {
