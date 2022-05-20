@@ -19,6 +19,7 @@ html {
 body {
     height: min-content;
     font-family: 'Inter', sans-serif;
+    background-color: #fffdf6;
 }
 
 .main {
@@ -36,7 +37,7 @@ body {
 }
 
 .main .login__container-logo {
-    background-color: #154056;
+    background-color: #fffdf6;
     display: flex;
     justify-content: center;
     padding: 1rem 0;
@@ -116,16 +117,20 @@ label {
 
 .btn-login {
     width: 100%;
-    background-color: #EDEDED;
-    border: none;
+    background-color: #fffdf6;
+    border-color: #000;
     height: 4rem;
     cursor: pointer;
     font-family: 'Inter', sans-serif;
     font-size: 1.4rem;
+    transition: 0.3s linear;
+    border-radius: 10px 10px;
 }
 
 .btn-login:hover {
-    background-color: #dcdbdb;
+    background-color: #26e0a7;
+    border-color:#26e0a7;
+    color: white;
 }
 
 .help-login {
