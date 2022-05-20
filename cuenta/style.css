@@ -28,10 +28,10 @@ main{
     height: 400px;
 }
 .cardCuenta{
-    border-radius: 1em;
+    border-radius: 5px;
     /* border: solid 1px #132643; */
     box-shadow:  0 0 20px #d4d8dc;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: clamp(0.8rem, 2.5vw, 2.5rem);
     font-weight: bold;
     width: 35rem;
