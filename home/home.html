@@ -7,31 +7,42 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" media="only screen and (max-width: 768px)" href="style.css">
     <script src="https://kit.fontawesome.com/49d5c485d4.js" crossorigin="anonymous"></script>
-    <title>Inicio</title>
+    <title>ITBANK</title>
 </head>
 
 <body>
 
     <header>
-        <header>
-            <div class="logo">
+        <div class="logo">
                 <img src="./img/ITBANK-LOGO-MAS-CHICO.png">
+    
+                <div class="onli">
+                    <a href="#"><input class="register" type="button" value="Cuenta"></input></a>
+                    <a href="../Login/login.html"><input class="banking" type="button" value="Salir"></input></a>
             </div>
-
-        </header>
-
+            <img src="../img/perfil.png" class="perfil">
+        </div>
     </header>
 
+
+
     <main>
+        <div class="socios">
+        <img src="../img/socio itbank 2.png">
+        </div>
         <h1 id="category">Tus Productos</h1>
         <div class="home">
+            
             <div class="card">
+                <a href="../cuenta/cuenta.html">
                 <div class="card-header">
                     <img class="icon" src="img\piggy-bank-solid.svg" alt="">
-                    <a class="title" href=""> Cuentas</a>
+                    <p>Cuenta</p>
                     <span class="subtitle">Saldos</span>
                 </div>
+            </a>
             </div>
+        
 
             <div class="card">
                 <div class="card-header">
@@ -76,7 +87,28 @@
     </main>
 
     <footer>
-        <div></div>
+        <nav>
+            <ol>
+                <li>
+                    <a id="link" href="">Seguridad</a>
+                </li>
+                <li>
+                    <a id="link" href="">Defensa al consumidor</a>
+                </li>
+                <li>
+                    <a id="link" href="">Proteccion de datos personales</a>
+                </li>
+                <li>
+                    <a id="link" href="">Comisiones</a>
+                </li>
+                <li>
+                    <a id="link" href="">Aviso legal</a>
+                </li>
+            </ol>
+        </nav>
+        <p>
+            &copyCopyright 2001-2022 ITBANK. Todos los derechos reservados. Prohibida la duplicación, distribución o almacenamiento en cualquier medio.
+        </p>
     </footer>
 </body>
 

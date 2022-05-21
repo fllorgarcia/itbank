@@ -2,107 +2,109 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-    <link rel="stylesheet" href="css/boxCheck.css">
-    <link rel="stylesheet" href="css/ex.css">
-    <title>Registro</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/boxCheck.css" />
+    <title>ITBANK Registro</title>
 </head>
+
 <body>
-<div class="box-registro">
-<!-- header de la pagina principal-->
-    <header>
-        <a href="Index.html">
-        <div class="logo">
-            <img   src="./img/ITBANK-LOGO-MAS-CHICO.png">
-        </div>
-        </a>
-    </header>
-    <!-- fin de la pagina principal-->
-    <div><!-- este div no tiene relevancia, es para separar algunas cosas-->
-    <h2>Por favor,escribí tus datos</h2>
-    <h3>Ingresa los datos solicitados</h3>
-        <!-- esto son los inputs con animaciones-->
-        <ol>
-        <li>
-        <form class="form">
-            <input type="text" required>
-            <label class="lbl-nombre">
-                <span class="text-nomb">DNI</span>
-            </label>
-        </form>
-        </li>
+    <main class="main">
+        <div class="login">
+            <a class="btn-help"> Ayuda </a>
 
-        <li>
-        <form class="form">
-            <input type="text" required>
-            <label class="lbl-nombre">
-                <span class="text-nomb">MAIL</span>
-            </label>
-        </form>
-        </li>
-        <!--Fin del input con animaciones de texto-->
-        <div class="genero">
-        <p>Genero</p>
-        <form name="formulario" method="post" action="/send.php">
-            <!-- Botones de opción -->
-            <p>
-                <input type="radio" name="sexo" value="H"> Hombre</input>
-                <input type="radio" name="sexo" value="M"> Mujer</input>
-            </p>
-        </form>
-        </div>
-    <!-- input telefono-->
-        <div class="telefono">
-            <form id="login" onsubmit="process(event)">
-                <input id="phone" type="tel" name="phone" class="int"/>
+            <div class="login__container-logo">
+                <a href="../index.html">
+                    <img class="logo" src="img/logo-itbank-negro.png" alt="">
+                </a>
+            </div>
+
+            <form class="form-login">
+
+                <h3 class="title-form">Ingrese los datos</h3>
+                <br>
+
+
+                <div class="inputs-box">
+                    <div class="vacio">
+                        </form>
+                    </div>
+                    <div class="input-animados">
+                        <form class="form">
+                            <input type="text" required>
+                            <label class="lbl-nombre">
+                                <span class="text-nomb">Nombre y Apellido</span>
+                            </label>
+                        </form>
+                    </div>
+                    <div class="input-animados">
+                        <form class="form">
+                            <input type="text" required>
+                            <label class="lbl-nombre">
+                                <span class="text-nomb">DNI</span>
+                            </label>
+                        </form>
+                    </div>
+                    <div class="input-animados">
+                        <form class="form">
+                            <input type="text" required>
+                            <label class="lbl-nombre">
+                                <span class="text-nomb">MAIL</span>
+                            </label>
+                        </form>
+                    </div>
+                    <div class="input-animados">
+                        <form class="form">
+                            <input type="text" required>
+                            <label class="lbl-nombre">
+                                <span class="text-nomb">Contraseña</span>
+                            </label>
+                        </form>
+                    </div>
+
+                    <div class="checkbox-container input-container">
+                        <input class="checkbox-input" type="checkbox" value="remember-me" />
+                        <label class="checkbox-label">Acepto terminos y condiciones.</label>
+                    </div>
+                    <div class="input-container">
+                        <a href="../home/home.html">
+                        <button type="button" class="btn-login">Registrarse</button>
+                        </a>
+                    </div>
+                    <a class="help-login" href="#">Consultas</a>
+                    <a class="register-link" href="../Login/login.html">Volver</a>
+                </div>
             </form>
-            <div class="alert alert-info" style="display: none;"> </div>
         </div>
-        <!--Terminos y condiciones-->
-        <div class="check">
-            <li><input type="checkbox" name="termino"> Acepto los Términos y Condiciones.</li>
-        </div>
-    <!-- boton de regristro-->
-        <div class="button">
-            <input type="button" value="Registrarme">
-        </div>
-    <!-- Este ees el boton para volver atras-->
-        <div class="button2">
-            <input type="button" value="Volver" onclick="history.back()">
-        </div>
-    </ol>
-</div>
-    <!--Script's para el detector de telefono-->
-    <script>
-        const info = document.querySelector(".alert-info");
+        <div class="bg-img"></div>
+    </main>
+    <footer>
+        <nav>
+            <ol>
+                <li>
+                    <a id="link" href="">Seguridad</a>
+                </li>
+                <li>
 
-        function process(event) {
-            event.preventDefault();
-
-            const phoneNumber = phoneInput.getNumber();
-
-            info.style.display = "";
-            info.innerHTML = `Numero telefonico en Ar.+54 formato: <strong>${phoneNumber}</strong>`;
-        }
-        const phoneInputField = document.querySelector("#phone");
-        const phoneInput = window.intlTelInput(phoneInputField, {
-            utilsScript:
-                "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-        });
-        function getIp(callback) {
-            fetch('https://ipinfo.io/json?token=<your token>', { headers: { 'Accept': 'application/json' } })
-                .then((resp) => resp.json())
-                .catch(() => {
-                    return {
-                        country: 'us',
-                    };
-                })
-                .then((resp) => callback(resp.country));
-        }
-    </script>
+                    <a id="link" href="">Defensa al consumidor</a>
+                </li>
+                <li>
+                    <a id="link" href="">Proteccion de datos personales</a>
+                </li>
+                <li>
+                    <a id="link" href="">Comisiones</a>
+                </li>
+                <li>
+                    <a id="link" href="">Aviso legal</a>
+                </li>
+            </ol>
+        </nav>
+        <p>
+            &copyCopyright 2001-2022 ITBANK. Todos los derechos reservados. Prohibida la duplicación, distribución o almacenamiento en cualquier medio.
+        </p>
+    </footer>
+    <script src="/app.js"></script>
 </body>
+
 </html>

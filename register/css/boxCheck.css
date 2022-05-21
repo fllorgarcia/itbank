@@ -1,252 +1,306 @@
+/*FONT*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
 
+/*RESETEO DE LA PAG*/
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
 body {
-    background-image: url(../img/ITB002.jpg);
-    background-size: cover;
-    margin: 0px 0px;
-    color: #6A6A73;
-}
-
-.check {
-    margin-top: 40px;
-}
-
-header {
-    background-color: #154056;
-    width: 800px;
-    max-width: 800px;
-    height: 100px;
-
-}
-
-.logo img {
-    margin-top: 10px;
-}
-
-.telefono {
-    margin-top: 70px;
-
-}
-
-.int {
-    width: 350px;
-    height: 50px;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-color: rgb(177, 177, 177);
-    transition: linear 0.2s;
-    margin-top: 50px;
-}
-
-.int:focus {
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-color: #154056;
-    outline: none;
-
-}
-
-.box-registro {
-    background: white;
-    width: 800px;
-    height: 1000px;
-    list-style: none;
-    margin: 0px 0px;
+    height: min-content;
     font-family: 'Inter', sans-serif;
+    background-color: #fffdf6;
+}
+
+.main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/*Inicio LAYOUT Formulario*/
+.main .login {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    justify-self: center;
+}
+
+.main .login__container-logo {
+    background-color: #fffdf6;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.main .login__container-logo .logo {
+    padding: .5rem;
+    width: auto;
+    height: 7rem;
+    object-fit: cover;
+}
+
+.main .login .title-form {
+
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: #8B98A9;
+    font-weight: 400;
     text-align: center;
 }
 
-.button {
-    margin-top: 20px;
+.form-login {
+    height: 80%;
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.button input {
-    outline: none;
-    background-color: #EDEDED;
-    width: 200px;
-    max-width: 200px;
-    max-height: 60px;
-    height: 60px;
-    border: none;
-    cursor: pointer;
-    transition: linear 0.2s;
+.inputs-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.button input:hover {
-    background-color: #dcdbdb;
+.input-container {
+    width: 80%;
+    display: block;
+    margin-top: 1.5rem
 }
 
-.button2 {
-    margin-top: 70px;
-}
-
-.button2 input {
-    outline: none;
-    background-color: #EDEDED;
-    width: 200px;
-    max-width: 200px;
-    max-height: 60px;
-    height: 60px;
-    border: none;
-    cursor: pointer;
-    transition: linear 0.2s;
-}
-
-.button2 input:hover {
-    background-color: #dcdbdb;
-}
-
-.genero {
-    margin-top: 40px;
-}
-
-@media only screen and (min-width:320px) and (max-width:500px) {
-    *{
-        margin: 0%;
-        padding: 0%;
-    }
-    .box-registro{
-        text-align: center !important;
-    }
-    header {
-        background-color:#154056;
-        max-width: 500px;
-        height: 100px;
-    
-    }
-    h2{
-        font-size: 30px;
-    }
-    h3{
-        font-size: 20px;
-    }
-    .form input {
-        width: 450px;
-        font-size: 23px;
-    }
-    .genero input{
-        margin-left: 20px;
-    }
-    .genero p{
-        font-size: 25px;
-        margin: 20px 20px;
-    }
-    .telefono input{
-        width: 450px;
-        font-size: 23px;
-    }
-    .check{
-        font-size: 23px;
-    }
-.button input {
-    background-color: #1DBEB4;
-    width: 300px;
+.input-animados .form {
+    width: 370px;
+    height: 50px;
     max-width: 400px;
-    max-height: 90px;
-    font-size: 40px;
-    color: white;
-    margin-left: 0%;
+    position: sticky;
+    overflow: hidden;
+    margin-top: 30px;
 }
 
-.button2 input {
-    background-color: #1DBEB4;
-    width: 300px;
-    max-width: 400px;
-    max-height: 90px;
-    font-size: 40px;
-    color: white;
-}
-
-body {
+.input-animados .form input {
+    width: 100%;
+    height: 100%;
     background: none;
-    max-width: 400px;
+    color: black;
+    padding-top: 20px;
+    border: none;
+    outline: 0px;
 }
 
-ol li {
-    list-style: none;
+.input-animados .form .lbl-nombre {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.title-form h3{
+    font-size: 19px;
+}
+.input-animados .form .lbl-nombre:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #26e0a7;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
 }
 
-h2 {
-    margin-top: 50px;
+.input-animados .text-nomb {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #dcdbdb;
 }
 
-h3 {
-    margin-top: 40px;
-} 
+.form input:focus+.lbl-nombre .text-nomb,
+.form input:valid+.lbl-nombre .text-nomb {
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #26e0a7;
 }
-@media only screen and (min-width:501px) and (max-width:700px) {
-    *{
-        margin: 0%;
-        padding: 0%;
-    }
-    .box-registro{
-        text-align: center !important;
-    }
-    header {
-        background-color:#154056;
-        max-width: 700px;
-        height: 100px;
+
+.form input:focus+.lbl-nombre:after,
+.form input:valid+.lbl-nombre:after {
+    transform: translateX(0%);
+}
+
+label {
+    font-size: clamp(1rem, 5vw, 1.3rem);
+}
+
+.checkbox-container {
+    display:flex;
+    align-items: center;
+    margin: 0;
+    margin-top: 30px;
+    margin-left: 20%;
+}
+
+.checkbox-label label {
+    margin: 0;
+    font-size: 2.5rem;
     
-    }
-    h2{
-        font-size: 30px;
-    }
-    h3{
-        font-size: 20px;
-    }
-    .form input {
-        width: 450px;
-        font-size: 23px;
-    }
-    .genero input{
-        margin-left: 20px;
-    }
-    .genero p{
-        font-size: 25px;
-        margin: 20px 20px;
-    }
-    .telefono input{
-        width: 450px;
-        font-size: 23px;
-    }
-    .check{
-        font-size: 23px;
-    }
-.button input {
-    background-color: #1DBEB4;
-    width: 400px;
-    max-width: 400px;
-    max-height: 90px;
-    font-size: 40px;
+}
+
+.checkbox-input {
+    height: 2rem;
+    width: 1.5rem;
+    margin-right: 2rem;
+}
+
+.btn-login {
+    width: 100%;
+    background-color: #fffdf6;
+
+    height: 4rem;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
+    transition: 0.3s ease;
+    border-color: #000;
+    border-radius: 10px 10px;
+}
+
+.btn-login:hover {
+    background-color: #26e0a7;
+    color: #EDEDED;
+    border-color: #26e0a7;
+}
+
+.help-login {
+    margin-top: 5rem;
+    color: #FF9B56;
+    font-size: 1.4rem;
+}
+
+.register-text {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.register-link {
+    margin-top: 1.9rem;
+    color: #FF9B56;
+    font-size: 1.4rem;
+}
+
+.help-login:hover,
+.register-link:hover {
+    color: #26e0a7;
+}
+
+
+.btn-help {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    width: 8rem;
+    height: 8rem;
+    background-color: #EDEDED;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s linear;
+
+}
+
+.btn-help:hover {
+    background-color: #26e0a7;
     color: white;
-    margin-left: 0%;
 }
 
-.button2 input {
-    background-color: #1DBEB4;
-    width: 400px;
-    max-width: 400px;
-    max-height: 90px;
-    font-size: 40px;
-    color: white;
+
+
+/*Final LAYOUT Formulario*/
+
+
+/*BACKGROUND IMAGE*/
+.main .bg-img {
+    display: none;
 }
 
-body {
-    background: none;
-    max-width: 400px;
+footer {
+    position: flex;
+    bottom: 0;
+    height: 5%;
+    background-color: #123444;
+    padding: 3rem;
+    color: #fff;
+    text-align: center;
+    font-size: small;
 }
-
-ol li {
+li {
     list-style: none;
+    display: inline-block;
+    margin: 20px;
 }
 
-h2 {
-    margin-top: 50px;
+#link {
+    color: #fff;
+    text-decoration: underline;
+    font-size: medium;
+    font-weight: 500;
 }
 
-h3 {
-    margin-top: 40px;
-} 
+#link:active {
+    color: #000;
+}
+
+@media(min-width:768px) {
+
+    .main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main .bg-img {
+        display: block;
+        background-image: url('../img/1.png');
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+    }
+
+    .main .login__container-logo .logo {
+        height: 8rem;
+    }
+
+}
+@media(min-width:150px){
+    .btn-help{
+        display: none;
+    }
+    .register-link{
+        display: none;
+    }
+    .help-login{
+        display: none;
+    }
+    footer{
+        width: 100%;
+        padding: none;
+    }
 }
