@@ -1,12 +1,14 @@
-
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
- body {
+
+body {
     font-family: 'Inter', sans-serif;
+    background-color: #fffdf6;
 }
+
 .home {
     margin: 2rem;
     display: grid;
@@ -16,18 +18,20 @@
     grid-auto-flow: dense;
     margin-bottom: 55px;
 }
-.onli{
+
+.onli {
     margin-right: 500px;
     margin-top: -50px;
 }
- .onli  input{
+
+.onli input {
     padding: 1.3em 3em;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
     font-weight: 100;
-    color: #154056;
-    background-color: #fff;
+    color: #132643;
+    background-color: #fffdf6;
     border: none;
     border-radius: 45px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -39,36 +43,40 @@
     margin-left: 10px;
 }
 
- .onli input:active {
+.onli input:active {
     transform: translateY(-1px);
 }
 
- .onli input:hover {
-    background-color: #1caa5c;
+.onli input:hover {
+    background-color: #26e0a7;
     box-shadow: 0px 10px 20px rgba(194, 194, 194, 0.4);
     color: #fff;
     transform: translateY(-7px);
 }
+
 header {
-    background-color: #154056;
+    background-color: #fffdf6;
     height: 8rem;
 }
-.logo .perfil{
+
+.logo .perfil {
     height: 100px;
     width: 100px;
-    float:right;
+    float: right;
     display: inline;
     margin-top: -20px;
 
 }
-.socios img{
+
+/* .socios img {
     width: 80%;
     height: 250px;
     margin-top: 5%;
     margin-left: 5%;
     border-radius: 20px 20px;
     margin-bottom: -5%;
-}
+} */
+
 /* .home .card {
     display: flex;
     cursor: pointer;
@@ -87,7 +95,8 @@ header {
     max-height: 8rem;
     overflow: hidden;
     padding: 1rem;
-    background: rgba(255, 34, 34, 0.05);;
+    background: rgba(255, 34, 34, 0.05);
+    ;
     border-radius: 15px;
     box-shadow: 0 0.2rem 0.3rem #919191;
     transition: all 0.25s;
@@ -112,7 +121,7 @@ header {
 .card .card-header .title {
     font-stretch: normal;
     letter-spacing: 0.33px;
-    color: #1c536e;
+    color: #132643;
     font-size: 1.5rem;
 }
 
@@ -124,7 +133,7 @@ a {
     font-size: 20px;
     font-stretch: normal;
     letter-spacing: 0.27px;
-    color: #1f1f1f;
+    color: #132643;
     line-height: 2;
     visibility: hidden;
 }
@@ -134,39 +143,42 @@ a {
     height: 7rem;
 }
 
-footer {
-    position: flex;
-    bottom: 0;
-    height: 5%;
-    background-color: #154056;
-    padding: 3rem;
-}
-
-#category {
-    line-height: 1.5;
-    margin: 8px;
-    margin-top: 180px;
-    font-size: 40px;
-    padding-left: 20px;
-}
-
-.icon {
+/* .icon {
     width: 5rem;
     height: 5rem;
-    color: black;
+    color: #26e0a7;
     padding-bottom: 1rem;
+} */
+.fa-gifts{
+    color: #26e0a7;
+    padding-bottom: 1rem;
+    margin: 1rem;
+    font-size: 5rem;
+}
+.fa-sack-dollar{
+    color: #26e0a7;
+    padding-bottom: 1rem;
+    margin: 1rem;
+    font-size: 5rem;
+}
+.fa-wallet{
+    color: #26e0a7;
+    padding-bottom: 1rem;
+    margin: 1rem;
+    font-size: 5rem;
 }
 
 footer {
     position: flex;
     bottom: 0;
     height: 5%;
-    background-color: #123444;
+    background-color: #fffdf6;
     padding: 3rem;
-    color: #fff;
+    color: #132643;
     text-align: center;
     font-size: small;
 }
+
 li {
     list-style: none;
     display: inline-block;
