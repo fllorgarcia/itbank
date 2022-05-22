@@ -5,3 +5,13 @@
 html {
   font-size: 62.5%;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 0.5rem;
+  height: 8.5rem;
+  margin: 1.5rem;
+}
