@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-    <title>ITBANK</title>
+    <title>ITBANK-Ayuda</title>
 </head>
 <body>
     <header class="header logo-contenedor">
@@ -18,13 +18,15 @@
         </div>
 
         <div class="contenedor">
-            <img id="log" src="register/img/logo-itbank-negro.png">
+            <a href="../index.html">
+            <img id="log" src="img/logo-itbank-negro.png">
+        </a>
         </div>
 
         <div class="online">
-            <a href="register/registro.html"><input class="register" type="button" value="Registrarme"></input>
+            <a href="../index.html"><input class="register" type="button" value="INICIO"></input>
             </a>
-            <a href="Login/login.html"><input class="banking" type="button" value="Online Banking"></input>
+            <a href="../Login/login.html"><input class="banking" type="button" value="iniciar sesión"></input>
             </a>
         </div>
     </header>
@@ -32,42 +34,42 @@
 
     <main>
         <div class="welcome">
-            <p><b>¡Hola!</b>¿en que podemos ayudarte?</p>
+            <p><b>!Bienvenido a centro de ayuda!</b><br>¿en que podemos ayudarte?</p>
         </div>
         <div class="home1">
             <div class="card1">
                 <div class="card-header1">
                     <img class="icon" src="img\747305.png" alt="" />
-                    <a class="text-card" href="">Seguros</a>
-                </div>
-            </div>
-            <div class="card1">
-                <div class="card-header1">
-                    <img class="icon" src="img\prestamos.png" alt="" />
-                    <a class="text-card" href="">Prestamos</a>
-                </div>
-            </div>
-            <div class="card1">
-                <div class="card-header1">
-                    <img class="icon" src="img\beneficios.png" alt="" />
-                    <a class="text-card" href="">Beneficios</a>
-                </div>
-            </div>
-            <div class="card1">
-                <div class="card-header1">
-                    <img class="icon" src="img\tarjetas.png" alt="" />
-                    <a class="text-card" href="">Tarjetas</a>
-                </div>
-            </div>
-            <div class="card1">
-                <div class="card-header1">
-                    <img class="icon" src="img\pngwing.com.png" alt="" />
-                    <a class="text-card" href="Login/login.html">Inversiones</a>
+                    <a class="text-card" href="">Cuenta</a>
                 </div>
             </div>
             <div class="card1">
                 <div class="card-header1">
                     <img class="icon" src="img\evita estafas.png" alt="" />
+                    <a class="text-card" href="">Robos</a>
+                </div>
+            </div>
+            <div class="card1">
+                <div class="card-header1">
+                    <img class="icon" src="img/PngItem_5688292.png" alt="" />
+                    <a class="text-card" href="">Preguntas Frecuentes</a>
+                </div>
+            </div>
+            <div class="card1">
+                <div class="card-header1">
+                    <img class="icon" src="../img/75624.png" alt="" />
+                    <a class="text-card" href="">Turnos</a>
+                </div>
+            </div>
+            <div class="card1">
+                <div class="card-header1">
+                    <img class="icon" src="img\tarjetas.png" alt="" />
+                    <a class="text-card" href="Login/login.html">Sobre mis tarjetas</a>
+                </div>
+            </div>
+            <div class="card1">
+                <div class="card-header1">
+                    <img class="icon" src="../img/2297720.png" alt="" />
                     <a class="text-card" href="register\img\ROBO-LOGO.png">Evita estafas</a>
                 </div>
             </div>
@@ -78,31 +80,23 @@
                 </a>
             </div>
         </div>
-        <div class="carousel-movile">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/1.png" class="d-block w-100" alt="..." width="700px" height="600">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/3.jpg" class="d-block w-100" alt="..." width="700px" height="600">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/ITB002.jpg" class="d-block w-100" alt="..." width="700px" height="600">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+        <div class="welcome">
+            <p><b>¿Queres contactarte con nosotros?</b><br>Escribinos por este medio.</p>
         </div>
+        <div class="hacemos1"> 
+            <form action="enviar.php" method="post">
+                <ul>
+              <li><input type="text" name="name" id="name" class="name" placeholder="Nombre"></li>
+              <li><input type="text" name="mail" id="mail" class="mail" placeholder="Correo"></li>
+              <li><input type="text" name="phone" id="subject" class="subject" placeholder="Telefono"></li>
+              <textarea name="message" class="message" placeholder="Escriba aqui por favor..." id="message"></textarea>
+              <div class="clear"></div>
+              <div class="col-md-8">
+            </ul>
+                <button type="submit" class="btn btn-primary">ENVIAR </button>
+              </div>
+            </form>
+           </div>
     </main>
 
 

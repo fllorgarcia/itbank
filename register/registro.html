@@ -12,70 +12,74 @@
 <body>
     <main class="main">
         <div class="login">
-            <a class="btn-help"> Ayuda </a>
+            <form>
+                <a class="btn-help" href="../ayuda/ayuda.html"> Ayuda </a>
 
-            <div class="login__container-logo">
-                <a href="../index.html">
-                    <img class="logo" src="img/logo-itbank-negro.png" alt="">
-                </a>
-            </div>
+                <div class="login__container-logo">
+                    <a href="../index.html">
+                        <img class="logo" src="img/logo-itbank-negro.png" alt="">
+                    </a>
+                </div>
 
-            <form class="form-login">
-
-                <h3 class="title-form">Ingrese los datos</h3>
-                <br>
-
+                <form class="form-login">
+                    <h3 class="title-form">Ingresa tus datos</h3>
+                    <br>
+                </form>
 
                 <div class="inputs-box">
                     <div class="vacio">
-                        </form>
-                    </div>
-                    <div class="input-animados">
-                        <form class="form">
-                            <input type="text" required>
-                            <label class="lbl-nombre">
+
+                        <div class="input-animados">
+                            <div class="form">
+                                <input type="text" required>
+                                <label class="lbl-nombre">
                                 <span class="text-nomb">Nombre y Apellido</span>
                             </label>
-                        </form>
-                    </div>
-                    <div class="input-animados">
-                        <form class="form">
-                            <input type="text" required>
-                            <label class="lbl-nombre">
+                            </div>
+                        </div>
+                        <div class="input-animados">
+                            <div class="form">
+                                <input type="text" required>
+                                <label class="lbl-nombre">
                                 <span class="text-nomb">DNI</span>
                             </label>
-                        </form>
-                    </div>
-                    <div class="input-animados">
-                        <form class="form">
-                            <input type="text" required>
-                            <label class="lbl-nombre">
-                                <span class="text-nomb">MAIL</span>
+                            </div>
+                        </div>
+                        <div class="input-animados">
+                            <div class="form">
+                                <input type="text" required>
+                                <label class="lbl-nombre">
+                                <span class="text-nomb">Email</span>
                             </label>
-                        </form>
-                    </div>
-                    <div class="input-animados">
-                        <form class="form">
-                            <input type="text" required>
-                            <label class="lbl-nombre">
+                            </div>
+                        </div>
+                        <div class="input-animados">
+                            <div class="form">
+                                <input type="password" required>
+                                <label class="lbl-nombre">
                                 <span class="text-nomb">Contraseña</span>
                             </label>
-                        </form>
-                    </div>
+                            </div>
+                        </div>
 
-                    <div class="checkbox-container input-container">
-                        <input class="checkbox-input" type="checkbox" value="remember-me" />
-                        <label class="checkbox-label">Acepto terminos y condiciones.</label>
+                        <div class="checkbox-container input-container">
+                            <input class="checkbox-input" type="checkbox" value="remember-me" />
+                            <label class="checkbox-label">Acepto terminos y condiciones.</label>
+                        </div>
+                        <div class="input-container">
+                            <a href="../home/home.html">
+                                <button type="button" class="btn-login">Registrarse</button>
+                            </a>
+                        </div>
+                        <div id="p-login">
+                            <span>¿Ya tienes una cuenta? </span><a class="help-login" href="#">Ingresar</a>
+                        </div>
+                        <a class="register-link" href="../Login/login.html">Volver</a>
+
                     </div>
-                    <div class="input-container">
-                        <a href="../home/home.html">
-                        <button type="button" class="btn-login">Registrarse</button>
-                        </a>
-                    </div>
-                    <a class="help-login" href="#">Consultas</a>
-                    <a class="register-link" href="../Login/login.html">Volver</a>
                 </div>
-            </form>
+        </div>
+        </form>
         </div>
         <div class="bg-img"></div>
     </main>
