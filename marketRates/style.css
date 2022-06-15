@@ -1,0 +1,40 @@
+.card {
+    width: 300px;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+}
+
+.card-body .sale {
+    font-size: 20px;
+    margin-left: 3rem;
+}
+
+.card-body .buy {
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.value {
+    font-weight: bolder;
+}
+
+.noCotiza {
+    margin: 0;
+    font-size: 40px;
+}
+
+.footer {
+    font-size: 14px;
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 4.5rem;
+}
